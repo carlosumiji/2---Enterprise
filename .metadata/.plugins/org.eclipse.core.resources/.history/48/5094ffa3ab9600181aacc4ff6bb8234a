@@ -1,0 +1,17 @@
+package br.com.fiap.spring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ContatoController {
+
+		//Método que abre a página com o formulário
+		@RequestMapping("contato/enviar")
+		public String abrirHome() {
+			return "contato/form"; 
+		}
+		
+		//Metodo que Processa as infomação do formulário
+		
+}

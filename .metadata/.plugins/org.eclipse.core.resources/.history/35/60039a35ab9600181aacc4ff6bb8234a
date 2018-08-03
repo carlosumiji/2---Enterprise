@@ -1,0 +1,13 @@
+package br.com.fiap.spring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ContatoController {
+
+		@RequestMapping("contato/enviar")
+		public String abrirHome() {
+			return "contato/form"; 
+		}
+}

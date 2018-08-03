@@ -1,0 +1,17 @@
+package br.com.fiap.spring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class ContatoController {
+
+	@Controller
+	public class HomeController {
+
+		//Mapeia a URL: http://localhost:8080/01-Spring-MVC/home 
+		@RequestMapping("/home")
+		public String abrirHome() {
+			return "home/contato"; //pasta + o nome do arquivo jsp
+		}
+	
+}

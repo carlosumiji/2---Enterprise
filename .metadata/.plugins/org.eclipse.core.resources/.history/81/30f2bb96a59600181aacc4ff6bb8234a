@@ -1,0 +1,12 @@
+package br.com.fiap.spring.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HomeController {
+
+	public String abrirHome() {
+		return "home/index"; //pasta + o nome do arquivo jsp
+	}
+	
+}

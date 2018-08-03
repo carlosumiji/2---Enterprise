@@ -1,0 +1,10 @@
+package br.com.fiap.spring.model;
+
+public class Carro {
+	private String placa;
+	private String preco;
+	private boolean automatico;
+	private String marcas;
+	
+
+}

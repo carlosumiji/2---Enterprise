@@ -1,0 +1,5 @@
+package br.com.fiap.spring.model;
+
+public class Carro {
+
+}

@@ -1,0 +1,6 @@
+package br.com.fiap.spring.controller;
+
+@Controller
+public class HomeController {
+
+}
