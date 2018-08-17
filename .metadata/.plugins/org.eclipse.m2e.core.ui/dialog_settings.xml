@@ -14,11 +14,13 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="02-Spring-MVC"/>
 			<item value="01-Spring-MVC"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="02-Spring-MVC"/>
 			<item value="01-Spring-MVC"/>
 		</list>
 		<list key="version">
