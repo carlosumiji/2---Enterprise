@@ -14,7 +14,7 @@ public class GenericDAOImpl<T,K>
 						implements GenericDAO<T, K>{
 
 	@PersistenceContext
-	private EntityManager em;
+	protected EntityManager em;
 	
 	private Class<T> clazz;
 	
