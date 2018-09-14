@@ -5,6 +5,6 @@ import br.com.fiap.spring.model.Bebida;
 
 public interface BebidaDAO extends GenericDAO<Bebida, Integer>{
 	
-	List<Bebida> buscarPorNomes(String nome);
+	List<Bebida> buscarPorNome(String nome);
 
 }

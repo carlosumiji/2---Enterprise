@@ -22,6 +22,13 @@ public class BebidaController {
 	@Autowired
 	private BebidaDAO dao;
 	
+	//bebida/pesquisar
+	@GetMapping("pesquisar")
+	public ModelAndView buscar(String nome) {
+		return new ModelAndView("bebida/listar")
+			.addObject("bebidas", dao.buscarPorNome(nome));
+	}
+	
 	@PostMapping("remover")
 	@Transactional
 	public String excluir(int codigo, RedirectAttributes r) {

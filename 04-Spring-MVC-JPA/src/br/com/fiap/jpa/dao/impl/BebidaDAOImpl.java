@@ -11,8 +11,8 @@ import br.com.fiap.spring.model.Bebida;
 public class BebidaDAOImpl extends GenericDAOImpl<Bebida, Integer> implements BebidaDAO {
 
 	@Override
-	public List<Bebida> buscarPorNomes(String nome) {
-		return em.createQuery("from Bebida where nome like :churros", Bebida.class)
+	public List<Bebida> buscarPorNome(String nome) {
+		return em.createQuery("from Bebida where upper(nome) like upper (:churros)", Bebida.class)
 				.setParameter("churros", "%"+nome+"%")
 				.getResultList();
 	}

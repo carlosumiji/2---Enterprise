@@ -26,7 +26,7 @@
 				<td>${bebida.nome }</td>
 				<td><fmt:formatDate value="${bebida.validade.time}"
 						pattern="dd/MM/yyyy" /></td>
-				<td>${bebida.alcoolico }</td>
+				<td>${bebida.alcoolico?"Sim":"Não" }</td>
 				<td><a class="btn btn-outline-primary btn-sm"
 					href="<c:url value="/bebida/editar/${bebida.codigo }"/>">Editar</a>
 					<button onclick="codigoBebida.value = ${bebida.codigo}"
